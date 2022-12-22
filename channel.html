@@ -17,10 +17,16 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <div class="header__logo">
+      <div class="header__logo channel-page-logo">
         <a href="#" class="hamburger"><img src="./img/icons/hamburger.svg" alt="Menu"></a>
         <a href="./index.html"><img src="./img/logo.svg" alt="YouTube"></a>
       </div>
+      <a href="./index.html" class="logo">
+        <div class="logo__wrapper">
+          <img src="./img/icons/logo-icon.svg" alt="YouTube">
+        </div>
+        Margaret Phelps
+      </a>
       <div class="header__input-wrapper">
         <input class="header__input-search" type="text" name="header-search" placeholder="Search">
       </div>
@@ -44,8 +50,15 @@
           </svg>
         </a>
       </div>
-      <a href="#">
+      <a href="#" class="header__avatar">
         <img src="./img/avatars/avatar1.svg" alt="Avatar">
+      </a>
+      <a href="#" class="header__more">
+        <svg width="5" height="19" viewBox="0 0 5 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M2.5 0C3.88071 0 5 1.11929 5 2.5C5 3.88071 3.88071 5 2.5 5C1.11929 5 0 3.88071 0 2.5C0 1.11929 1.11929 0 2.5 0ZM5 9.5C5 8.11929 3.88071 7 2.5 7C1.11929 7 0 8.11929 0 9.5C0 10.8807 1.11929 12 2.5 12C3.88071 12 5 10.8807 5 9.5ZM5 16.5C5 15.1193 3.88071 14 2.5 14C1.11929 14 0 15.1193 0 16.5C0 17.8807 1.11929 19 2.5 19C3.88071 19 5 17.8807 5 16.5Z"
+            fill="black" />
+        </svg>
       </a>
     </div>
   </header>
@@ -183,7 +196,7 @@
         <h3 class="sidebar__subscriptions-title">Subscriptions</h3>
         <ul class="sidebar__subscriptions-list">
           <li class="sidebar__subscriptions-item">
-            <a href="./channel.html" class="sidebar__link">
+            <a href="#" class="sidebar__link">
               <div class="sidebar__subscriptions-avatar-wrapper">
                 <img src="./img/avatars/avatar2.svg" alt="Avatar">
               </div>
@@ -191,7 +204,7 @@
             </a>
           </li>
           <li class="sidebar__subscriptions-item">
-            <a href="./channel.html" class="sidebar__link">
+            <a href="#" class="sidebar__link">
               <div class="sidebar__subscriptions-avatar-wrapper">
                 <img src="./img/avatars/avatar3.svg" alt="Avatar">
               </div>
@@ -199,7 +212,7 @@
             </a>
           </li>
           <li class="sidebar__subscriptions-item">
-            <a href="./channel.html" class="sidebar__link">
+            <a href="#" class="sidebar__link">
               <div class="sidebar__subscriptions-avatar-wrapper">
                 <img src="./img/avatars/avatar4.svg" alt="Avatar">
               </div>
@@ -244,16 +257,124 @@
         </a>
       </div>
     </div>
-    <div class="content__home-page scroll">
-      <ul>
-        <li class="content__recommendation">
-          <div class="content__header">
-            <h2 class="content__specific-title">
-              <div class="content__image-wrapper">
-                <img class="content__image" src="./img/avatars/avatar2.svg" alt="Avatar">
+    <div class="content__channel-page scroll">
+      <div class="content__channel-bg">
+        <img class="image-border-radius" src="./img/channel-bg.jpg" alt="Cover">
+      </div>
+      <div class="content__channel-intro">
+        <h2 class="content__channel-title">
+          <div class="content__channel-image-wrapper">
+            <img src="./img/avatars/avatar3.svg" alt="Avatar">
+          </div>
+          <div>
+            Margaret Phelps
+            <span class="content__channel-info">245K subscribed</span>
+          </div>
+        </h2>
+        <div class="content__channel-controls">
+          <a class="content__channel-notification" href="#">
+            <svg class="icon" width="22" height="26" viewBox="0 0 22 26" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.66927 22.4545C1.64382 22.4545 0 20.8655 0 18.9091C0 17.6106 0.727122 16.4532 1.83849 15.835C1.83849 15.4764 1.83333 11.2256 1.83333 11.2256C1.83333 7.14185 4.66852 3.70365 8.55556 2.6765V2.36364C8.55556 1.05824 9.64997 0 11 0C12.35 0 13.4444 1.05824 13.4444 2.36364V2.6765C17.3323 3.70344 20.1667 7.14194 20.1667 11.2318V15.8454C21.2793 16.4664 22 17.619 22 18.9091C22 20.8681 20.3586 22.4545 18.3307 22.4545H14.6667C14.6646 24.413 13.0197 26 11 26C8.97496 26 7.33333 24.4143 7.33333 22.4571L3.66927 22.4545ZM9.77778 22.4545C9.77778 23.1083 10.3244 23.6364 11 23.6364C11.6709 23.6364 12.2201 23.1064 12.2222 22.4545H9.77778ZM17.7222 11.2318V16.9427C17.7222 17.2702 17.9922 17.6032 18.3181 17.6847L18.6385 17.7648C19.1733 17.8984 19.5556 18.3689 19.5556 18.9091C19.5556 19.5624 19.0088 20.0909 18.3307 20.0909H3.66927C2.99369 20.0909 2.44444 19.56 2.44444 18.9091C2.44444 18.3666 2.82517 17.8979 3.36026 17.7647L3.69151 17.6823C4.0153 17.6017 4.27778 17.2732 4.27778 16.9426V11.2256C4.27778 7.63639 7.28675 4.72727 11 4.72727C14.7148 4.72727 17.7222 7.63541 17.7222 11.2318Z" />
+            </svg>
+          </a>
+          <button class="subscribe">Subscribe 2.3m</button>
+        </div>
+      </div>
+      <div class="content__channel-about">
+        <div class="content__channel-tabs">
+          <ul class="content__channel-tabs-list">
+            <li class="content__channel-tabs-item">
+              <a href="#" class="content__channel-tab-link active-tab">Home</a>
+            </li>
+            <li class="content__channel-tabs-item">
+              <a href="#" class="content__channel-tab-link">Videos</a>
+            </li>
+            <li class="content__channel-tabs-item">
+              <a href="#" class="content__channel-tab-link">Playlists</a>
+            </li>
+            <li class="content__channel-tabs-item tabs-more">
+              <a href="#" class="content__channel-tab-link">
+                <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="1"
+                    d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                    fill="black" />
+                </svg>
+              </a>
+            </li>
+            <li class="content__channel-tabs-item">
+              <a href="#" class="content__channel-tab-link">Channels</a>
+            </li>
+            <li class="content__channel-tabs-item">
+              <a href="#" class="content__channel-tab-link">Discussion</a>
+            </li>
+            <li class="content__channel-tabs-item">
+              <a href="#" class="content__channel-tab-link">About</a>
+            </li>
+            <li class="content__channel-tabs-item">
+              <a href="#" class="content__channel-tab-link">
+                <svg class="icon" width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.9005 16.4865L14.3205 12.9065L14.3195 12.9055C16.9095 9.569 16.4594 4.79387 13.2916 2.00007C10.1238 -0.793727 5.32983 -0.643497 2.34317 2.34317C-0.643497 5.32983 -0.793727 10.1238 2.00007 13.2916C4.79387 16.4594 9.569 16.9095 12.9055 14.3195L16.4855 17.8995C16.7364 18.1596 17.1081 18.2642 17.4578 18.1729C17.8075 18.0816 18.0808 17.8088 18.1725 17.4592C18.2643 17.1097 18.1603 16.7378 17.9005 16.4865ZM13.1967 11.0005C12.1249 12.8569 10.1441 14.0005 8.00052 14.0005C4.68681 14.0005 2.00052 11.3142 2.00052 8.00052C2.00052 4.68681 4.68681 2.00052 8.00052 2.00052C10.1441 2.00052 12.1249 3.14411 13.1967 5.00052C14.2685 6.85693 14.2685 9.14411 13.1967 11.0005Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="content__channel-tabs-content">
+            <a href="./video-player.html">
+              <div class="content__video-big-image-wrapper image-border-radius">
+                <img class="image-border-radius" src="./img/video/big-size/big-video4.jpg" alt="Video">
+                <span class="video-time">7:36</span>
               </div>
-              Dollie Blair
-            </h2>
+            </a>
+            <div class="content__channel-tabs-text">
+              <h2 class="content__channel-tabs-title">Choosing The Best Audio Player Software For Your Computer</h2>
+              <p>
+                Your cheap internet-based banner advertising will become one of the sought for ads there are. Today,
+                the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups. Bayles
+                A
+                common medium for advertising on the Internet is the use of banner ads.
+              </p>
+              <p class="content__video-info-data">11k views · 6 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="content__channel-recommended">
+          <h4 class="content__channel-recommended-title">Recommended channel</h4>
+          <ul class="content__channel-recommended-list">
+            <li class="content__channel-recommended-item">
+              <a href="#" class="content__channel-recommended-link">
+                <div class="content__channel-recommended-image-wrapper">
+                  <img src="./img/avatars/avatar8.svg" alt="Avatar">
+                </div>
+                Flora Benson
+              </a>
+            </li>
+            <li class="content__channel-recommended-item">
+              <a href="#" class="content__channel-recommended-link">
+                <div class="content__channel-recommended-image-wrapper">
+                  <img src="./img/avatars/avatar9.svg" alt="Avatar">
+                </div>
+                Violet Cobb
+              </a>
+            </li>
+            <li class="content__channel-recommended-item">
+              <a href="#" class="content__channel-recommended-link">
+                <div class="content__channel-recommended-image-wrapper">
+                  <img src="./img/avatars/avatar10.svg" alt="Avatar">
+                </div>
+                Phillip Mullins
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content__recommendation">
+        <div class="content__header">
+          <h2 class="content__specific-title">
+            Margaret Phelps videos
+          </h2>
+          <div class="content__controls">
             <div class="arrows">
               <button class="arrow arrow_left">
                 <div class="arrow-icon">
@@ -267,260 +388,90 @@
               </button>
             </div>
           </div>
-          <div class="content__slider">
-            <ul class="content__video-list">
-              <li class="content__video-item">
-                <a href="./video-player.html" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video1.jpg" alt="Video">
-                    <span class="video-time">4:15</span>
-                  </div>
-                  <h3 class="content__video-title">A Brief History Of Creation</h3>
-                  <div class="content__video-info">
-                    <p>80k views · 3 days ago</p>
-                    <p>Dollie Blair</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video2.jpg" alt="Video">
-                    <span class="video-time">8:00</span>
-                  </div>
-                  <h3 class="content__video-title">Selecting The Right Hotel</h3>
-                  <div class="content__video-info">
-                    <p>123k views · 1 months ago</p>
-                    <p>Dollie Blair</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video3.jpg" alt="Video">
-                    <span class="video-time">5:32</span>
-                  </div>
-                  <h3 class="content__video-title">Asteroids</h3>
-                  <div class="content__video-info">
-                    <p>43k views · 12 days ago</p>
-                    <p>Dollie Blair</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video4.jpg" alt="Video">
-                    <span class="video-time">6:40</span>
-                  </div>
-                  <h3 class="content__video-title">Telescopes 101</h3>
-                  <div class="content__video-info">
-                    <p>11k views · 6 months ago</p>
-                    <p>Dollie Blair</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video5.jpg" alt="Video">
-                    <span class="video-time">1:45</span>
-                  </div>
-                  <h3 class="content__video-title">Medical Care Is Just</h3>
-                  <div class="content__video-info">
-                    <p>18k views · 2 days ago</p>
-                    <p>Dollie Blair</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video6.jpg" alt="Video">
-                    <span class="video-time">2:12</span>
-                  </div>
-                  <h3 class="content__video-title">Moon Gazing</h3>
-                  <div class="content__video-info">
-                    <p>67k views · 4 months ago</p>
-                    <p>Dollie Blair</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="content__recommendation">
-          <div class="content__header">
-            <h2 class="content__specific-title">
-              Recommended
-            </h2>
-            <div class="arrows">
-              <button class="arrow arrow_left">
-                <div class="arrow-icon">
-                  <img src="./img/icons/arrow-left.svg" alt="Arrow">
+        </div>
+        <div class="content__slider">
+          <ul class="content__video-list">
+            <li class="content__video-item">
+              <a href="#" class="content__video-link">
+                <div class="content__video-sm-image-wrapper">
+                  <img class="image-border-radius" src="./img/video/small-size/small-video13.jpg" alt="Video">
+                  <span class="video-time">7:36</span>
                 </div>
-              </button>
-              <button class="arrow">
-                <div class="arrow-icon">
-                  <img src="./img/icons/arrow-right.svg" alt="Arrow">
+                <h3 class="content__video-title">Astronomy Or Astrology</h3>
+                <div class="content__video-info">
+                  <p>240k views · 4 months ago</p>
+                  <p>Food & Drink</p>
                 </div>
-              </button>
-            </div>
-          </div>
-          <div class="content__slider">
-            <ul class="content__video-list">
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-big-image-wrapper image-border-radius">
-                    <img class="image-border-radius" src="./img/video/big-size/big-video1.jpg" alt="Video">
-                    <span class="video-time">3:40</span>
-                  </div>
-                  <h3 class="content__video-title">Dude You Re Getting A Telescope</h3>
-                  <div class="content__video-info">
-                    <p>34k views · 5 months ago</p>
-                    <p>Gussie French</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-big-image-wrapper image-border-radius">
-                    <img class="image-border-radius" src="./img/video/big-size/big-video2.jpg" alt="Video">
-                    <span class="video-time">2:12</span>
-                  </div>
-                  <h3 class="content__video-title">Moon Gazing</h3>
-                  <div class="content__video-info">
-                    <p>54k views · 11 months ago</p>
-                    <p>Edward Osborne</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-big-image-wrapper image-border-radius">
-                    <img class="image-border-radius" src="./img/video/big-size/big-video3.jpg" alt="Video">
-                    <span class="video-time">2:12</span>
-                  </div>
-                  <h3 class="content__video-title">Moon Gazing</h3>
-                  <div class="content__video-info">
-                    <p>125k views · 4 months ago</p>
-                    <p>Dollie Blair</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="content__recommendation">
-          <div class="content__header">
-            <h2 class="content__specific-title">
-              <div class="content__image-wrapper">
-                <img class="content__image" src="./img/plate.svg" alt="Avatar">
-              </div>
-              Food & Drink
-              <span class="content__subtitle">Recommended channel for you</span>
-            </h2>
-            <div class="content__controls">
-              <button class="subscribe">Subscribe 2.3m</button>
-              <div class="arrows">
-                <button class="arrow arrow_left">
-                  <div class="arrow-icon">
-                    <img src="./img/icons/arrow-left.svg" alt="Arrow">
-                  </div>
-                </button>
-                <button class="arrow">
-                  <div class="arrow-icon">
-                    <img src="./img/icons/arrow-right.svg" alt="Arrow">
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="content__slider">
-            <ul class="content__video-list">
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video7.jpg" alt="Video">
-                    <span class="video-time">7:36</span>
-                  </div>
-                  <h3 class="content__video-title">Astronomy Or Astrology</h3>
-                  <div class="content__video-info">
-                    <p>240k views · 4 months ago</p>
-                    <p>Food & Drink</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video8.jpg" alt="Video">
-                    <span class="video-time">2:19</span>
-                  </div>
-                  <h3 class="content__video-title">Advertising Outdoors</h3>
-                  <div class="content__video-info">
-                    <p>13k views · 15 days ago</p>
-                    <p>Food & Drink</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video9.jpg" alt="Video">
-                    <span class="video-time">9:05</span>
-                  </div>
-                  <h3 class="content__video-title">Radio Astronomy</h3>
-                  <div class="content__video-info">
-                    <p>1k views · 11 months ago</p>
-                    <p>Food & Drink</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video10.jpg" alt="Video">
-                    <span class="video-time">3:40</span>
-                  </div>
-                  <h3 class="content__video-title">A Good Autoresponder</h3>
-                  <div class="content__video-info">
-                    <p>45k views · 2 months ago</p>
-                    <p>Food & Drink</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video11.jpg" alt="Video">
-                    <span class="video-time">1:56</span>
-                  </div>
-                  <h3 class="content__video-title">Baby Monitor Technology</h3>
-                  <div class="content__video-info">
-                    <p>86k views · 7 days ago</p>
-                    <p>Food & Drink</p>
-                  </div>
-                </a>
-              </li>
-              <li class="content__video-item">
-                <a href="#" class="content__video-link">
-                  <div class="content__video-sm-image-wrapper">
-                    <img class="image-border-radius" src="./img/video/small-size/small-video12.jpg" alt="Video">
-                    <span class="video-time">4:15</span>
-                  </div>
-                  <h3 class="content__video-title">Asteroids</h3>
-                  <div class="content__video-info">
-                    <p>123k views · 4 months ago</p>
-                    <p>Dollie Blair</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+              </a>
+            </li>
+            <li class="content__video-item">
+              <a href="#" class="content__video-link">
+                <div class="content__video-sm-image-wrapper">
+                  <img class="image-border-radius" src="./img/video/small-size/small-video14.jpg" alt="Video">
+                  <span class="video-time">2:19</span>
+                </div>
+                <h3 class="content__video-title">Advertising Outdoors</h3>
+                <div class="content__video-info">
+                  <p>13k views · 15 days ago</p>
+                  <p>Food & Drink</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__video-item">
+              <a href="#" class="content__video-link">
+                <div class="content__video-sm-image-wrapper">
+                  <img class="image-border-radius" src="./img/video/small-size/small-video15.jpg" alt="Video">
+                  <span class="video-time">9:05</span>
+                </div>
+                <h3 class="content__video-title">Radio Astronomy</h3>
+                <div class="content__video-info">
+                  <p>1k views · 11 months ago</p>
+                  <p>Food & Drink</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__video-item">
+              <a href="#" class="content__video-link">
+                <div class="content__video-sm-image-wrapper">
+                  <img class="image-border-radius" src="./img/video/small-size/small-video12.jpg" alt="Video">
+                  <span class="video-time">3:40</span>
+                </div>
+                <h3 class="content__video-title">A Good Autoresponder</h3>
+                <div class="content__video-info">
+                  <p>45k views · 2 months ago</p>
+                  <p>Food & Drink</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__video-item">
+              <a href="#" class="content__video-link">
+                <div class="content__video-sm-image-wrapper">
+                  <img class="image-border-radius" src="./img/video/small-size/small-video16.jpg" alt="Video">
+                  <span class="video-time">1:56</span>
+                </div>
+                <h3 class="content__video-title">Baby Monitor Technology</h3>
+                <div class="content__video-info">
+                  <p>86k views · 7 days ago</p>
+                  <p>Food & Drink</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__video-item">
+              <a href="#" class="content__video-link">
+                <div class="content__video-sm-image-wrapper">
+                  <img class="image-border-radius" src="./img/video/small-size/small-video17.jpg" alt="Video">
+                  <span class="video-time">4:15</span>
+                </div>
+                <h3 class="content__video-title">Asteroids</h3>
+                <div class="content__video-info">
+                  <p>123k views · 4 months ago</p>
+                  <p>Dollie Blair</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </body>

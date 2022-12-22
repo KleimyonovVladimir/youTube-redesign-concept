@@ -1,0 +1,419 @@
+@media screen and (max-width: 1800px) {
+  .content__channel-about {
+    display: block;
+  }
+  .content__channel-tabs-content {
+    margin-bottom: 40px;
+  }
+  .content__channel-recommended-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    grid-column-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .content__video-description {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .content__video-slider .content__video-sm-image-wrapper {
+    width: 300px;
+    height: 160px;
+  }
+  .content__video-slider .content__video-title {
+    font-size: 18px;
+  }
+  .content__video-slider .content__video-info {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content__channel-about {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    min-width: 1240px;
+  }
+  .header__input-search {
+    width: 550px;
+  }
+  .content__channel-about {
+    display: block;
+  }
+  .content__channel-bg {
+    height: auto;
+  }
+  .content__channel-tabs-content {
+    display: block;
+  }
+  .content__channel-tabs-text {
+    margin-left: 0;
+    width: auto;
+  }
+  .content__video {
+    height: 600px;
+  }
+  .content__video-slider .content__video-sm-image-wrapper {
+    width: 280px;
+    height: 150px;
+  }
+  .content__video-player-page {
+    display: block;
+  }
+  .content__video-player-page .content__video-list {
+    flex-direction: row;
+  }
+  .content__video-player-page .content__video-item {
+    margin-right: 40px;
+  }
+  .content__video-material {
+    margin-bottom: 20px;
+  }
+  .content__video-slider-header {
+    justify-content: flex-start;
+  }
+  .content__autoplay-container {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .header {
+    min-width: 992px;
+  }
+  .header__input-search {
+    width: 550px;
+  }
+  .header__details {
+    display: none;
+  }
+  .content__header {
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .content__channel-tabs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .content__video-intelligence {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content__video-views {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .content__video-about {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    min-width: 768px;
+  }
+  .header__input-search {
+    width: 350px;
+  }
+  .content__channel-intro {
+    flex-direction: column;
+  }
+  .content__channel-title {
+    margin-bottom: 20px;
+  }
+  .tabs-more {
+    display: block;
+  }
+  .content__channel-tabs-item:nth-child(n + 5) {
+    display: none;
+  }
+  .content__channel-page .content__video-big-image-wrapper {
+    width: auto;
+  }
+  .content__video-name {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    min-width: 425px;
+  }
+  .header__input-search {
+    display: none;
+  }
+  .header__input-wrapper {
+    width: auto;
+  }
+  .sidebar {
+    display: none;
+  }
+  .content {
+    padding-top: 0;
+  }
+  .content__home-page {
+    padding-top: 30px;
+  }
+  .content__channel-page {
+    margin-top: 0;
+  }
+  .content__channel-recommended-list {
+    grid-auto-flow: row;
+    grid-auto-rows: auto;
+  }
+  .content__channel-tabs-content .content__video-big-image-wrapper {
+    width: 250px;
+    height: 150px;
+  }
+  .content__channel-bg {
+    margin: 0 -65px 0 -25px;
+  }
+  .content__channel-bg img,
+  .content__video {
+    border-radius: 0;
+  }
+  .content__video-player-page {
+    padding: 0 16px;
+  }
+  .content__video-player-wrapper {
+    margin: 0 -16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 10px 16px;
+    min-width: 320px;
+  }
+  .channel-page-logo {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .sidebar {
+    display: block;
+    height: auto;
+    border-top: 1px solid #f1f1f1;
+    padding-left: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 12;
+    background-color: #fff;
+    width: 100%;
+    padding: 12px 0;
+  }
+  .sidebar__menu {
+    margin-bottom: 0;
+  }
+  .sidebar__menu-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  .sidebar__menu-item {
+    margin-bottom: 0;
+  }
+  .sidebar__link {
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .sidebar__menu-icon-wrapper {
+    margin-right: 0;
+  }
+  .sidebar__menu-list_secondary,
+  .sidebar__subscriptions,
+  .sidebar__settings {
+    display: none;
+  }
+  .content {
+    display: block;
+  }
+  .content__home-page,
+  .content__channel-page,
+  .content__video-player-page {
+    padding: 0 16px;
+    padding-bottom: 15px;
+  }
+  .content__header {
+    display: none;
+  }
+
+  .content__video-list {
+    flex-direction: column;
+  }
+  .content__video-item {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .content__video-big-image-wrapper,
+  .content__video-sm-image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .content__video-big-image-wrapper img {
+    width: 100%;
+  }
+  .hamburger {
+    display: none;
+  }
+  .content__subtitle {
+    display: none;
+  }
+  .content__controls .subscribe {
+    display: none;
+  }
+  .content__slider {
+    margin-top: 0;
+  }
+  .content__channel-tabs-item {
+    margin-right: 0;
+  }
+  .content__channel-tabs-content {
+    display: none;
+  }
+  .content__channel-recommended {
+    display: none;
+  }
+  .content__channel-tabs-list {
+    grid-gap: 25px;
+  }
+  .header__avatar {
+    display: none;
+  }
+  .header__more {
+    display: block;
+    margin-top: 4px;
+  }
+  .content__channel-bg {
+    height: 100px;
+    width: auto;
+    margin: 0 -16px;
+  }
+  .content__channel-bg .image-border-radius {
+    border-radius: 0;
+  }
+  .content__channel-intro {
+    margin-top: -45px;
+  }
+  .content__channel-title {
+    display: block;
+  }
+  .content__channel-notification {
+    display: none;
+  }
+  .content__home-page,
+  .content__channel-page {
+    margin-bottom: 40px;
+  }
+  .content__video-name {
+    font-size: 20px;
+  }
+  .content__video {
+    height: 180px;
+  }
+  .content__video-about {
+    display: none;
+  }
+  .content__video-about-more {
+    display: none;
+  }
+  .content__video-description .content__channel-image-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+  .content__video-description .content__channel-title {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .content__video-description .subscribe {
+    background-color: transparent;
+    color: #ff0000;
+    padding: 0;
+  }
+  .content__video-description {
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #d8d8d880;
+  }
+  .content__video-player-container {
+    padding-bottom: 30px;
+  }
+  .content__channel-info_mobile {
+    display: block;
+  }
+
+  .content__video-player-page .content__video-list {
+    flex-direction: column;
+  }
+  .content__video-slider-title {
+    font-size: 20px;
+  }
+  .content__autoplay-name {
+    font-size: 10px;
+  }
+  .content__video-player-page .content__video-item {
+    margin-right: 0;
+  }
+  .content__video-slider {
+    padding: 0;
+    width: 100%;
+  }
+  .content__video-slider .content__video-title {
+    font-size: 16px;
+  }
+  .content__video-slider .content__video-info {
+    font-size: 13px;
+  }
+  .switch {
+    width: 30px;
+    height: 20px;
+  }
+  .autoplay:before {
+    width: 16px;
+    height: 16px;
+  }
+  .content__input-autoplay:checked + .autoplay:before {
+    transform: translate(10px, -50%);
+  }
+  .content__video-feedback span {
+    display: none;
+  }
+  .content__video-feedback-list {
+    margin-right: 0;
+  }
+  .content__video-slider-header {
+    justify-content: space-between;
+  }
+  .content__video-views {
+    font-size: 12px;
+  }
+  .content__video-feedback-button {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .content__video-player .sidebar {
+    display: block;
+  }
+  .content__video-slider .content__video-sm-image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .content__video-player-wrapper {
+    margin: 0 -16px;
+  }
+  .content__channel-info_desktop {
+    display: none;
+  }
+}
