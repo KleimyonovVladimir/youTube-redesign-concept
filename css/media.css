@@ -140,6 +140,10 @@
   .content__video-name {
     font-size: 28px;
   }
+  .content__video-big-image-wrapper {
+    width: 500px;
+    height: 210px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -232,9 +236,6 @@
   .sidebar__settings {
     display: none;
   }
-  .content {
-    display: block;
-  }
   .content__home-page,
   .content__channel-page,
   .content__video-player-page {
@@ -246,6 +247,7 @@
   }
 
   .content__video-list {
+    display: flex;
     flex-direction: column;
   }
   .content__video-item {

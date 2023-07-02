@@ -203,11 +203,13 @@ input {
 .hamburger {
   margin-right: 28px;
 }
+.main {
+  height: 100%;
+}
 .content {
   display: flex;
-  padding-top: 30px;
-  overflow: auto;
   height: calc(100% - 84px);
+  padding-top: 30px;
 }
 .sidebar__menu {
   margin-bottom: 58px;
@@ -255,10 +257,14 @@ input {
   height: 26px;
   margin-right: 10px;
 }
+.content__main-page {
+  padding-top: 0;
+}
 .content__home-page {
   overflow: auto;
   overflow-x: hidden;
   padding: 0 25px 64px;
+  margin: 0 auto;
 }
 .content__header {
   display: flex;
@@ -310,7 +316,9 @@ input {
   margin-top: 30px;
 }
 .content__video-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
   align-items: center;
 }
 .content__video-item {
@@ -361,7 +369,7 @@ input {
   padding: 0 65px 40px 25px;
   overflow: auto;
   overflow-x: hidden;
-  margin-top: -20px;
+  margin: -20px auto 0;
 }
 
 .content__channel-bg {
@@ -684,6 +692,7 @@ input {
   letter-spacing: 1px;
 }
 .content__video-player-page .content__video-list {
+  display: flex;
   flex-direction: column;
 }
 .content__video-player-page .content__video-item {
