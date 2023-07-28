@@ -81,6 +81,14 @@
   .content__autoplay-container {
     margin-left: 30px;
   }
+  .content__video-slider {
+    overflow: initial;
+    padding: 0;
+  }
+
+  .content__video-player-page .content__video-item:last-child {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 1240px) {
   .header {
@@ -181,6 +189,13 @@
   }
   .content__channel-page {
     margin-top: 0;
+    padding: 0 15px;
+  }
+  .arrows {
+    display: none;
+  }
+  .content__header {
+    gap: 0;
   }
   .content__channel-recommended-list {
     grid-auto-flow: row;
@@ -206,6 +221,11 @@
   .content__video-item {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  .content__home-page,
+  .content__channel-page,
+  .content__video-player-page {
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 576px) {

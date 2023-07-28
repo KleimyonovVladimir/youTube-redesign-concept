@@ -668,7 +668,6 @@ input {
 .content__video-slider {
   overflow: auto;
   overflow-x: hidden;
-  width: fit-content;
   padding: 0 10px;
 }
 .content__video-slider .content__video-info {
