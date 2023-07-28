@@ -122,6 +122,9 @@
   .header__input-search {
     width: 350px;
   }
+  .sidebar {
+    display: none;
+  }
   .content__channel-intro {
     flex-direction: column;
   }
@@ -140,12 +143,18 @@
   .content__video-name {
     font-size: 28px;
   }
-  .content__video-big-image-wrapper {
-    width: 500px;
-    height: 210px;
+}
+@media (min-width: 768px) and (max-width: 1700px) {
+  .content__slider {
+    overflow: auto;
+  }
+  .content__video-list {
+    width: max-content;
+  }
+  .content__video-list_second {
+    width: auto;
   }
 }
-
 @media screen and (max-width: 768px) {
   .header {
     min-width: 425px;
@@ -161,9 +170,14 @@
   }
   .content {
     padding-top: 0;
+    overflow: auto;
+    display: block;
   }
+
   .content__home-page {
     padding-top: 30px;
+    margin: 0;
+    overflow: hidden;
   }
   .content__channel-page {
     margin-top: 0;
@@ -172,10 +186,7 @@
     grid-auto-flow: row;
     grid-auto-rows: auto;
   }
-  .content__channel-tabs-content .content__video-big-image-wrapper {
-    width: 250px;
-    height: 150px;
-  }
+
   .content__channel-bg {
     margin: 0 -65px 0 -25px;
   }
@@ -188,6 +199,13 @@
   }
   .content__video-player-wrapper {
     margin: 0 -16px;
+  }
+  .content__video-list {
+    display: block;
+  }
+  .content__video-item {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -235,6 +253,10 @@
   .sidebar__subscriptions,
   .sidebar__settings {
     display: none;
+  }
+  .content {
+    overflow: auto;
+    display: block;
   }
   .content__home-page,
   .content__channel-page,
